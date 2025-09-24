@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert</title>
+</head>
+<body>
+        <button onclick="abrirAlerta()">Abrir Alerta</button>
+        <button onclick="abrirAlerta2()">Abrir Alerta2</button>
+        <button onclick="abrirAlerta3()">Abrir Alerta3</button>
+        <button onclick="abrirAlerta4()">Abrir Alerta4</button>
+</body>
+
+
+<script src="./funcaoDosAlerts.js"></script>
+
+<script>
+
+
+
+
+    function abrirAlerta(){
+        swal({
+            title: "Olá",
+            text: "Seja Bem-Vindo",
+            icon: "success",
+            timer: 1050, //Tempo que vai ficar na tela antes de desaparecer
+            //ou clicar no botao
+        });
+    }
+
+    function abrirAlerta2(){
+        swal({
+            title: "Olá",
+            text: "Seja Bem-Vindo",
+            icon: "error",
+        });
+    }
+
+     function abrirAlerta3(){
+        swal({
+            title: "Olá",
+            text: "Seja Bem-Vindo",
+            icon: "info",
+        });
+    }
+
+    function abrirAlerta4(){
+        swal({
+            title: "Olá",
+            text: "Seja Bem-Vindo",
+            icon: "warning",
+        });
+    }
+
+
+
+</script>
+
+
+</html>
